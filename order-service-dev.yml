@@ -7,7 +7,7 @@ spring:
   datasource:
      url: jdbc:h2:mem:order_master
      username: root
-     password:
+     password: 814362
   jpa:
     hibernate:
       ddl-auto: update
