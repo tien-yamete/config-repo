@@ -2,9 +2,11 @@ spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:h2:mem:order_master
-    driverClassName: org.h2.Driver
+    url: jdbc:mysql://localhost:3306/order_db
+    username: root
+    password: 814362
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: none
-    show-sql: false
+      ddl-auto: update 
+    show-sql: true
